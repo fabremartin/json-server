@@ -99,10 +99,10 @@ jobs:
           git push origin main
 
       # Commit the updated Chart.yaml back to the source repo
-      # - name: Commit updated Chart.yaml
-        #  run: |
-          # git config --global user.name "fabremartin"
-          # git config --global user.email "lucian.clain@gmail.com"
-          # git add ./k8s/charts/json-server/Chart.yaml
-          # git commit -m "Bump chart version to $NEW_VERSION [skip ci]"
-          # git push origin main
+      - name: Commit updated Chart.yaml
+        run: |
+          git config --global user.name "fabremartin"
+          git config --global user.email "lucian.clain@gmail.com"
+          git add ./k8s/charts/json-server/Chart.yaml
+          git commit -m "Bump chart version to $NEW_VERSION [skip ci]"
+          git push origin main

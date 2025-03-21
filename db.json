@@ -2,8 +2,7 @@
     "posts": [
       { "id": "1", "title": "a title", "views": 100 },
       { "id": "2", "title": "another title", "views": 200 },
-      { "id": "4", "title": "fresh install here we go", "views": 10 },
-      { "id": "4", "title": "hello everyone", "views": 1000 }
+      { "id": "4", "title": "fresh install here we go", "views": 10 }
     ],
     "comments": [
       { "id": "1", "text": "a comment about post 1", "postId": "1" },

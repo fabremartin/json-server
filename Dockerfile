@@ -1,5 +1,5 @@
-# Use official Node.js image as a base image
-FROM node:16
+#Node.js Alpine image
+FROM node:16-alpine
 
 # Set the working directory in the container
 WORKDIR /usr/src/app
@@ -7,13 +7,13 @@ WORKDIR /usr/src/app
 # Copy the package.json and package-lock.json
 COPY package*.json ./
 
-# Install dependencies (if needed, for any other dependencies)
+# Install dependencies
 RUN npm install
 
 # Copy the rest of the application files
 COPY . .
 
-# Expose port 3000 to the outside world
+# Expose port 3000
 EXPOSE 3000
 
 # Command to run the JSON server with npx
